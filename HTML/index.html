@@ -1,12 +1,191 @@
+<!-- Cal tenir en compte que aquest document no té cap full d'estils CSS associat. Per tant, es veurà tal qual, només HTML interpretat per navegador, sense estils. -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Configuració del document -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Title</title><!-- Títol de la pàgina web. Apareix a la pestanya del navegador -->
+    <link rel="stylesheet" href="assets/css/index.css">
 </head>
+
 <body>
-    <h1>prueba</h1>
+
+    <!-- Tot el codi HTML va dins del tag body -->
+
+    <header class="cabecera">
+        <!-- Capçalera de secció -->
+        <a href="#">
+            <img src="https://picsum.photos/100/50" alt="Logo" class="menu_navç">
+            <!-- Imatge. La ruta del recurs src pot ser una URL d'un recurs extern o pot apuntar cap a un fitxer del propi servidor -->
+        </a>
+        <nav>
+            <!-- Barra de navegació -->
+            <a href="inici.html" target="_blank">Inici</a>
+            <a href="cv.html" target="_blank">CV</a>
+            <a href="contacte.html">Contactar</a>
+        </nav>
+    </header>
+
+    <h1 class="titol_principal">EL MEU PORTFOLI</h1>
+    <!-- Títol de la pàgina. Només hi pot haver un H1 per pàgina. La resta de títols poden anar de H2 a H6, poden estar repetits i són jeràrquics. Seccions
+    del mateix nivell poden tenir el mateix H, per exemple H2. Si a dins de les seccions hi ha més títols o subapartats, llavors ha de ser H3, H4 ... -->
+
+    <section id="qui-soc">
+        <!-- Contenidor amb ID -->
+        <h2 class="titol">Qui sóc</h2>
+        <div class="contingut">
+            <p class="text1">
+                <!-- Paràgraf -->
+                Toad-like smile Flourish and Blotts he knew I'd come back Quidditch World Cup. Fat Lady baubles banana
+                fritters fairy lights Petrificus Totalus.
+                So thirsty, deluminator first years follow me 12 inches of parchment. Head Boy start-of-term banquet
+                Cleansweep Seven roaring lion hat.
+                Unicorn blood crossbow mars is bright tonight, feast Norwegian Ridgeback. Come seek us where our voices
+                sound, we cannot sing above the ground,
+                Ginny Weasley bright red. Fanged frisbees, phoenix tears good clean match.
+                Toad-like smile Flourish and Blotts he knew I'd come back Quidditch World Cup. Fat Lady baubles banana
+                fritters fairy lights Petrificus Totalus.
+                So thirsty, deluminator first years follow me 12 inches of parchment. Head Boy start-of-term banquet
+                Cleansweep Seven roaring lion hat.
+                Unicorn blood crossbow mars is bright tonight, feast Norwegian Ridgeback. Come seek us where our voices
+                sound, we cannot sing above the ground,
+                Ginny Weasley bright red. Fanged frisbees, phoenix tears good clean match.
+                <br><!-- Salt de linia  -->
+                <br><!-- Salt de linia  -->
+                Squashy armchairs dirt on your nose brass scales crush the Sopophorous bean with flat side of silver
+                dagger,
+                releases juice better than cutting.
+                Full moon Whomping Willow three turns should do it lemon drops. Locomotor trunks owl treats that will be
+                50
+                points, Mr. Potter.
+                Witch Weekly, he will rise again and he will come for us, headmaster Erumpent horn. Fenrir Grayback
+                horseless carriages 'zis is a chance many would die for!
+                Half-giant jinxes peg-leg gillywater <span class="color-green">broken glasses</span> large black dog
+                Great
+                Hall. Nearly-Headless Nick now string them together, and answer me this,
+                which creature would you be unwilling to kiss? Poltergeist sticking charm, troll umbrella stand flying
+                cars
+                golden locket Lily Potter.
+                Pumpkin juice Trevor wave your wand out glass orbs, a Grim knitted hats. Stan Shunpike doe patronus,
+                suck
+                his soul Muggle-Born large order of drills the trace.
+                Bred in captivity fell through the veil, quaffle blue flame ickle diddykins Aragog. Yer a wizard, Harry
+                Doxycide the woes of Mrs. Weasley Goblet of Fire.
+            </p>
+            <img src="https://picsum.photos/id/0/200/300" height="300"  class="imatge_caixa"alt="Logotip HTML5">
+            <!-- Imatge dins del mateix servidor, a la carpeta /img/ . L'atribut "alt" serveix per escirure una descripció de la imatge,
+            per accessibilitat. Per exemple, un usuari invident no pot veure la imatge, però si té una descripció, hi ha eines que li podran llegir la descripció. En cas que la imatge sigui
+            totalment decorativa i no aporti res, l'atribut alt s'ha deixar buit ( alt="" ), però sempre s'ha d'escriure -->
+        </div>
+
+    </section>
+
+
+
+    <section>
+        <h2 class="titol">Els meus projectes</h2><!-- Títol de secció -->
+        <!-- Contenidor -->
+        <div class="caixes">
+            <article class="caixa">
+                <!-- Contenidor -->
+                <!-- Contenedor cos de secció -->
+                <img src="https://picsum.photos/id/237/100/100" class="imatge_caixa" alt="Descripció de la imatge">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet consectetur
+                    adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit
+                    amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem
+                    ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur
+                    adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit
+                    amet consectetur adipisicing elit.
+                </p>
+                <button>Llegir més</button>
+            </article>
+
+            <article class="caixa">
+                <!-- Contenidor -->
+                <!-- Contenedor cos de secció -->
+                <img src="https://picsum.photos/id/237/150/150" class="imatge_caixa" alt="Descripció de la imatge">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet consectetur
+                    adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit
+                    amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem
+                    ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur
+                    adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit
+                    amet consectetur adipisicing elit.
+                </p>
+                <button>Llegir més</button>
+            </article>
+
+            <article class="caixa">
+                <!-- Contenidor -->
+                <!-- Contenedor cos de secció -->
+                <img src="https://picsum.photos/id/237/150/150"  class="imatge_caixa"alt="Descripció de la imatge">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet consectetur
+                    adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit
+                    amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem
+                    ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur
+                    adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit
+                    amet consectetur adipisicing elit.
+                </p>
+                <button>Llegir més</button>
+            </article>
+
+        </div>
+    </section>
+
+    <section>
+        <h1 class="titol-experiencia">Experiencia</h1><!-- Títol de secció -->
+        <div class="experiencia">
+            <article>
+                <img src="assets\Ellipse 1.svg" alt="Descripció de la imatge" height="300">
+            </article>
+            <article>
+                <img src="assets\Ellipse 2.svg" alt="Descripció de la imatge" height="300">
+            </article>
+            <article>
+                <img src="assets\Ellipse 3.svg" alt="Descripció de la imatge" height="300">
+            </article>
+    </section>
+    </div>
+
+    <section>
+        <h2 class="titol">Les meves aficions</h2><!-- Títol de secció -->
+        <!-- Contenidor -->
+        <div class="caixes_aficions">
+            <article class="caixa_afi">
+                <h3>Viatjar</h3>
+                <img src="assets/books.svg" height="50" alt="Descripció de la imatge">
+            </article>
+            <article class="caixa_afi">
+                <h3>Llegir</h3>
+                <img src="assets/camera-outline.svg" height="50" alt="Descripció de la imatge">
+            </article>
+            <article class="caixa_afi">
+                <h3>Fotografia</h3>
+                <img src="assets/code-outline.svg" height="50" alt="Descripció de la imatge">
+            </article>
+            <article class="caixa_afi">
+                <h3>Dibuixar amb CSS</h3>
+                <img src="assets/books.svg" height="50" alt="Descripció de la imatge">
+            </article>
+            <article class="caixa_afi">
+                <h3>Maquetar una web</h3>
+                <img src="assets/contact.svg" height="50" alt="Descripció de la imatge">
+
+            </article>
+            <article class="caixa_afi">
+                <h3>Anar en bici</h3>
+                <img src="assets/airplane-outline.svg" height="50" alt="Descripció de la imatge">
+            </article>
+
+        </div>
+
+
+
+
+</section>
+
 </body>
+
 </html>
