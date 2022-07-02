@@ -1,0 +1,342 @@
+:root {
+    /*representa el elemento html
+    --main-color: #0044ff;
+    /*variables con sus valores asignados*/
+    --alt-color: #1e241f;
+    --titol: rgb(38, 25, 97);
+    --titol_principal: white;
+
+}
+
+
+body {
+    margin: 0;
+}
+
+
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 1rem 2rem; */
+    background-color: #222;
+}
+
+.menu_nav {
+    display: flex;
+    flex-direction: row;
+}
+
+nav {
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    color: var(--titol_principal);
+}
+
+a {
+    color: var(--titol_principal);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.titol_principal {
+    display: grid;
+    /*otra opcion igual que la de flex pero con menos líneas, y utilizando modelo grid */
+    place-content: center;
+    height: 20vh;
+    background-image: url('https://picsum.photos/100/100?grayscale');
+    background-size: cover;
+    /*extiende la imagen dentro del contenedor en el que está*/
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+}
+
+
+h2 {
+    text-align: center;
+}
+
+.titol {
+    color: var(--titol);
+    /*variable css*/
+    /* text-shadow: 0 0 5px green; */
+}
+
+.contingut {
+    display: flex;
+    width: 80vw;
+    /*ocupara el 80% del total del ancho de la ventana del navegador*/
+    margin: 0 auto;
+}
+
+.cawixes {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    padding: 5rem;
+    flex-direction: row;
+}
+
+.caixa {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    border: 1px solid #222;
+    border-radius: 16px;
+    overflow: hidden;
+    /*para que no salga la imagen fuera del border radius al hacer un background-image*/
+    
+}
+
+.caixa>p {
+    padding: 1rem;
+}
+
+.caixa>button {
+    margin: 1rem;
+    padding: .5rem 1rem;
+}
+
+.experiencia {
+    display: flex;
+    align-content: space-around;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 5rem;
+    background-color: black;
+}
+
+.titol-experiencia {
+    color: white;
+    background-color: black;
+    margin: 0px;
+    text-align: center;
+    padding: 2rem;
+
+}
+
+.caixes_aficions {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    padding: 5rem;
+
+}
+
+.caixa_afi {
+    display: flex;
+    width: 35vw;
+    background-color: antiquewhite;
+    align-content: space-between;
+    justify-content: space-evenly;
+
+
+}
+
+.dins {
+    position: relative;
+    margin: 0 auto;
+}
+
+
+
+
+/***************************************************************************/
+/*************************   MEDIA QUERIES   *******************************/
+/***************************************************************************/
+
+/* ------------S'aplicarà per pantalles de COM A MÀXIM 600px, o el que és el mateix, pantalles MÉS PETITES de 600px -------*/
+
+@media only screen and (max-width: 600px) {
+
+    /* body {
+        /* background-color: rgb(127, 140, 255); */
+     .caixes {
+        display: grid;
+        grid-template-columns: 1fr;
+        /*define el numero de columnas de la cuadrícula. En este caso 1 columna*/
+        gap: 2rem;
+        padding: 5px;
+    }
+
+    .caixa {
+        display: grid;
+        width: 100%;
+        text-align: justify;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem;
+        justify-items: center;
+    }
+    .caixa button
+    {
+        width:30vw;
+        margin: 0 auto;
+    }
+
+    img.imatge_caixa {
+        width: 80vw;
+    }
+
+    .imatge_caixa,
+    .imatge_text {
+        width: 100%;
+        box-sizing: border-box;
+
+    }
+
+    .experiencia {
+        display: grid;
+
+    }
+
+    .caixes_aficions {
+        display: grid;
+    }
+
+    .caixa_afi {
+        width: 75vw;
+        grid-template-columns: 1fr;
+    }
+
+    .contingut {
+        display: grid;
+        text-align: justify;
+    }
+
+    .experiencia {
+        display: flex;
+        align-content: space-around;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5rem;
+        background-color: black;
+        align-items: center;
+    }
+}
+
+/*-------------  Amb mides d'entre 600px i 900px s'aplicarà els estils------------*/
+
+@media screen and (min-width: 601px) and (max-width: 899px) {
+
+    /* body {
+        /* background-color: rgb(240, 198, 11); */
+    */ #qui-soc {
+        display: grid;
+    }
+
+    .caixes {
+        display: grid;
+        grid-template-columns: 1fr;
+        /*define el numero de columnas de la cuadrícula. En este caso 1 columna*/
+        gap: .5rem;
+        justify-items: center;
+        ;
+    }
+
+    .caixa {
+        display: grid;
+        width: 95vw;
+        text-align: justify;
+        justify-items: center;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .caixa p, .caixa p{
+        
+            width: 65vw;
+        }
+
+
+    .imatge_caixa,
+    .imatge_text {
+        width: 60vw;
+        box-sizing: border-box;
+        padding: .5rem;
+    }
+
+    img.imatge_caixa {
+        width: 65vw;
+    }
+    .experiencia {
+        display: grid;
+        padding: 5rem;
+        background-color: black;
+        align-items: center;
+        /* flex-direction: column; */
+        justify-items: center;
+        align-content: space-around;
+    }
+
+    .caixes_aficions {
+        display: grid;
+    }
+
+    .caixa_afi {
+        width: 75vw;
+        grid-template-columns: 1fr;
+    }
+
+    .contingut {
+        display: grid;
+        width: 80vw;
+        text-align: justify;
+        justify-content: center;
+    }
+}
+
+/*----------S'aplicarà per pantalles de COM A MÍNIM 900px, o el que és el mateix, pantalles MÉS GRANS de 900px------------*/
+
+@media only screen and (min-width: 900px) {
+    /* body {
+            background-color: lime; */
+
+
+    .caixes {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        /*define el numero de columnas de la cuadrícula. En este caso 1 columna*/
+        gap: .5rem;
+        justify-items: center;
+
+    }
+
+    .caixa {
+        display: flex;
+        flex-direction: column;
+        flex: 1 0 15rem;
+        border: 1px solid #222;
+        border-radius: 16px;
+        overflow: hidden;
+        
+    }
+
+    .imatge_caixa,
+    .imatge_text {
+        width: 100%w;
+        box-sizing: border-box;
+        padding: 1rem;
+    }
+
+    .contingut {
+        display: flex;
+        width: 80vw;
+        margin: 0 auto;
+        align-items: flex-start;
+        justify-content: center;
+        align-content: flex-start;
+        flex-wrap: nowrap;
+        text-align: justify;
+        flex-direction: row;
+
+    }
+
+}

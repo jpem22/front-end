@@ -1,0 +1,144 @@
+html{
+    font-size:20px;
+}
+header {
+    display: flex;
+    background-color: #222;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imatge_fons{
+    background-image: url('https://picsum.photos/seed/picsum/200/300');
+    height: 30vh;
+    background-repeat: no-repeatç;
+    background-size: cover;
+    overflow: hidden;
+    width: 100vw;
+    
+}
+nav {
+    display: flex;
+    }
+
+nav a {
+    color: white;
+}
+
+a {
+    color: var(--color-marca);
+    text-decoration: none;
+}
+
+.titol {
+    text-align: center;
+    font-size: 2rem;
+ 
+
+}
+
+.index {
+    display: flex;
+    width: 80vw;
+    margin: 0 auto;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: column;
+    height: 25vh;
+}
+
+.enlaces_index{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1.5rem;
+    
+}
+
+.informacio_personal {
+    background-color: rgb(223, 215, 215);
+    display: flex;
+    width: 100vw;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    height: 55vh;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.dades_personals {
+    display: flex;
+    width: 80vw;
+    margin: 0 auto;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: row-reverse;
+    height: 55vh;
+    width: 100vw;
+    gap: 20rem;
+ 
+}
+
+.idiomes {
+    display: flex;
+    width: 80vw;
+    margin: 0 auto;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: column;
+    height: 55vh;
+}
+
+.informacio {
+    display: flex;
+    width: 100vw;
+    margin: 0 auto;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: column;
+    height: 55vh;
+}
+
+.llistat_estudis {
+    display: flex;
+    height: 35vh;
+    flex-direction: column;
+    width: 80vw;
+
+}
+
+.pintarfons{
+
+    background-color: rgb(216, 213, 213);
+}
+
+.taula {
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+
+tr,
+th,
+td {
+    padding: 1rem;
+    text-align: center;
+    /*centrar contenido X en las celdas*/
+}
+
+.pie{
+    display: flex;
+    height: 8vh;
+    flex-direction: row;
+    gap: 2rem;
+    background-color: black;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+    height: 10vh;
+}
