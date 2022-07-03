@@ -1,0 +1,313 @@
+*
+{
+    margin:0;
+}
+html {
+    font-size: 20px;
+}
+
+header {
+    display: flex;
+    background-color: #222;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+}
+
+.enllaços{ 
+display: flex;
+    gap: 0.5rem;
+}
+
+.imatge_fons {
+    background-image: url('https://picsum.photos/seed/picsum/200/300');
+    height: 30vh;
+    background-repeat: no-repeatç;
+    background-size: cover;
+    overflow: hidden;
+    width: 100vw;
+
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: white;
+}
+
+a {
+    color: var(--color-marca);
+    text-decoration: none;
+}
+
+.titol {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 6.5rem;
+}
+
+
+
+.index {
+    display: flex;
+    width: 80vw;
+    margin: 0 auto;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: column;
+    height: 25vh;
+}
+
+.enlaces_index {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1.5rem;
+
+}
+
+.informacio_personal {
+    background-color: rgb(223, 215, 215);
+    display: flex;
+    width: 100vw;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    height: 55vh;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom:1.5rem;
+}
+
+.dades_personals {
+    display: flex;
+    width: 80vw;
+    margin: 0 auto;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: row-reverse;
+    height: 55vh;
+    width: 100vw;
+    gap: 20rem;
+
+}
+
+.idiomes {
+    display: flex;
+    width: 80vw;
+    margin: 0 auto;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: column;
+    height: 55vh;
+}
+
+.informacio {
+    display: flex;
+    width: 100vw;
+    margin: 0 auto;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: column;
+    height: 55vh;
+}
+
+.llistat_estudis {
+    display: flex;
+    height: 35vh;
+    flex-direction: column;
+    width: 80vw;
+    line-height: 2.5rem;
+
+}
+
+div p{
+    line-height: 2.5rem;
+}
+
+.pintarfons {
+
+    background-color: rgb(216, 213, 213);
+}
+
+.taula {
+    border-collapse: collapse;
+    border-spacing: 0px;
+    width: 100%;
+}
+
+tr,
+th,
+td {
+    padding: 1rem;
+    text-align: center;
+    /*centrar contenido X en las celdas*/
+}
+
+.pie {
+    display: flex;
+    height: 8vh;
+    flex-direction: row;
+    gap: 2rem;
+    background-color: black;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+    height: 10vh;
+}
+
+
+/***************************************************************************/
+/*************************   MEDIA QUERIES   *******************************/
+/***************************************************************************/
+
+/* MÒBIL------------S'aplicarà per pantalles de COM A MÀXIM 600px, o el que és el mateix, pantalles MÉS PETITES de 600px -------*/
+
+@media only screen and (max-width: 600px) {
+
+    body {
+        background-color: rgb(127, 140, 255);
+
+    }
+}
+
+.index {
+    width: 80vw;
+    margin: 0 auto;
+    height: auto;
+    padding-bottom: 3rem;
+}
+
+.enlaces_index {
+    display: grid;
+    align-items: center;
+    justify-items: end;
+    grid-template-columns: 5vw 30vw;
+    justify-content: center;
+}
+
+.informacio {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: column;
+    height: 55vh;
+}
+
+.pie {
+   
+    display: grid;
+    height: auto;   
+    background-color: black;    
+    grid-template-rows: 2.5rem 2.5rem 2.5rem;
+    justify-items: center;
+    padding: .5rem;
+}
+
+
+.imatge_fons {
+    background-image: url(https://picsum.photos/seed/picsum/200/300);
+    height: 30vh;
+    background-repeat: no-repeatç;
+    background-size: cover;
+    overflow: hidden;
+    width: 100vw;
+    display: grid;
+    align-content: center;
+}
+
+.dades_personals img{
+    display: none;
+}
+
+
+
+/*-------------  Amb mides d'entre 600px i 900px s'aplicarà els estils------------*/
+
+@media screen and (min-width: 601px) and (max-width: 899px) {
+
+    body {
+        background-color: rgb(240, 198, 11);
+    }
+
+    .dades_personals img{
+        display: block;
+    }
+
+    .enlaces_index {
+        display: grid;
+        grid-template-columns: repeat(4, 100px);
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+        justify-items: stretch;
+
+    }
+
+    .titol {
+        text-align: center;
+        font-size: 2rem;
+        line-height: 6.5rem;
+    }
+
+    .dades_personals {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: 10px 10px;
+        align-content: center;
+        justify-items: start;
+    }
+
+    .pie {
+        display: block;
+        height: auto;
+        background-color: black;       
+        justify-items: center;
+        padding: 0.5rem;
+        text-align: center
+    }
+}
+
+/*----------S'aplicarà per pantalles de COM A MÍNIM 900px, o el que és el mateix, pantalles MÉS GRANS de 900px------------*/
+
+@media only screen and (min-width: 900px) {
+    body {
+        background-color: lime;
+    }
+    .dades_personals {
+        display: flex;
+        width: 80vw;
+        margin: 0 auto;
+        align-items: center;
+        flex-wrap: nowrap;
+        justify-content: center;
+        flex-direction: row-reverse;
+        height: 55vh;
+        width: 100vw;
+        gap: 20rem;
+    }
+    
+    .dades_personals img{
+        display: block;
+    }
+
+    .pie {
+        display: block;
+        height: auto;
+        background-color: black;
+        justify-items: center;
+        padding: 0.5rem;
+        text-align: center
+    }
+}
