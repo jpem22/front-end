@@ -52,7 +52,7 @@ a {
     /*extiende la imagen dentro del contenedor en el que está*/
     background-repeat: no-repeat;
     background-position: center;
-    color: white;
+    color: black;
 }
 
 
@@ -84,17 +84,17 @@ h2 {
 .caixa {
     display: flex;
     flex-direction: column;
-    width: 20vw;
+    /* width: 20vw; */
     border: 1px solid #222;
     border-radius: 16px;
     overflow: hidden;
     /*para que no salga la imagen fuera del border radius al hacer un background-image*/
-    
+
 }
 
-.caixa>p {
+/* .caixa>p {
     padding: 1rem;
-}
+} */
 
 .caixa>button {
     margin: 1rem;
@@ -158,31 +158,37 @@ h2 {
 
     /* body {
         /* background-color: rgb(127, 140, 255); */
-     .caixes {
+    .caixes {
         display: grid;
         grid-template-columns: 1fr;
         /*define el numero de columnas de la cuadrícula. En este caso 1 columna*/
         gap: 2rem;
-        padding: 5px;
+        padding: 3rem;
+
     }
 
     .caixa {
         display: grid;
-        width: 100%;
+        width: 75vw;
         text-align: justify;
         align-items: center;
         justify-content: center;
         padding: 0.5rem;
         justify-items: center;
     }
-    .caixa button
-    {
-        width:30vw;
+
+    .caixa button {
+        width: 30vw;
         margin: 0 auto;
     }
 
+    .caixa p {
+
+        width: 75vw;
+    }
+
     img.imatge_caixa {
-        width: 80vw;
+        width: 85vw;
     }
 
     .imatge_caixa,
@@ -238,34 +244,36 @@ h2 {
         /*define el numero de columnas de la cuadrícula. En este caso 1 columna*/
         gap: .5rem;
         justify-items: center;
-        ;
+
     }
 
     .caixa {
         display: grid;
-        width: 95vw;
+        width: 70vw;
         text-align: justify;
         justify-items: center;
         justify-content: center;
         align-items: start;
     }
 
-    .caixa p, .caixa p{
-        
-            width: 65vw;
-        }
+    .caixa p,
+    .caixa p {
+
+        width: 65vw;
+    }
 
 
     .imatge_caixa,
     .imatge_text {
-        width: 60vw;
+        width: 100%;
         box-sizing: border-box;
-        padding: .5rem;
+        padding: 0.5rem
     }
 
-    img.imatge_caixa {
-        width: 65vw;
-    }
+    /* img.imatge_caixa {
+        width: 70vw;
+    } */
+
     .experiencia {
         display: grid;
         padding: 5rem;
@@ -316,27 +324,43 @@ h2 {
         border: 1px solid #222;
         border-radius: 16px;
         overflow: hidden;
-        
+        width: 30vw;
+
     }
 
     .imatge_caixa,
     .imatge_text {
-        width: 100%w;
+        width: 30vw;
         box-sizing: border-box;
-        padding: 1rem;
+      
+    }
+
+    .contingut.imatge_caixa,
+    .imatge_text {
+        width: 20vw;
+        box-sizing: border-box;
+      
+    }
+
+    article p{
+        padding: .5rem;
+        text-align: justify;
     }
 
     .contingut {
-        display: flex;
-        width: 80vw;
-        margin: 0 auto;
-        align-items: flex-start;
-        justify-content: center;
-        align-content: flex-start;
-        flex-wrap: nowrap;
-        text-align: justify;
-        flex-direction: row;
+     display: grid;    
+    /* align-items: stretch;
+    justify-content: center; */
+    grid-column: 1fr 2fr;
+    align-content: center;
+    justify-items: end;
+    grid-template-columns: 2fr 1fr;
 
+    }
+   .contingut p {
+    padding: 15px;
+        width: 55vw;
+        text-align: justify;
     }
 
 }
