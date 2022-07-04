@@ -174,21 +174,19 @@ h2 {
 
 @media only screen and (max-width: 600px) {
 
-    /* body {
-        /* background-color: rgb(127, 140, 255); */
-    
-        header {
-            display: grid;
-            background-color: #222;
-            text-align: center;
-            grid-template-columns: 1fr;
-        }
-    
-        nav.enllaços {
-            display: grid;
-        }
 
-        .caixes {
+    header {
+        display: grid;
+        background-color: #222;
+        text-align: center;
+        grid-template-columns: 1fr;
+    }
+
+    nav.enllaços {
+        display: grid;
+    }
+
+    .caixes {
         display: grid;
         grid-template-columns: 1fr;
         /*define el numero de columnas de la cuadrícula. En este caso 1 columna*/
@@ -270,9 +268,8 @@ h2 {
 
 @media screen and (min-width: 601px) and (max-width: 899px) {
 
-    /* body {
-        /* background-color: rgb(240, 198, 11); */
-    */ #qui-soc {
+
+    #qui-soc {
         display: grid;
     }
 
@@ -301,20 +298,21 @@ h2 {
     }
 
 
-    .imatge_caixa, .imatge_text {
+    .imatge_caixa,
+    .imatge_text {
         width: 70%;
         box-sizing: border-box;
         padding: 0.5rem;
         /* align-content: center; */
         margin: 0 auto;
     }
-   
+
 
     .experiencia {
         display: grid;
         padding: 5rem;
         background-color: black;
-        align-items: center;        
+        align-items: center;
         justify-items: center;
         align-content: space-around;
     }
@@ -339,9 +337,6 @@ h2 {
 /*----------S'aplicarà per pantalles de COM A MÍNIM 900px, o el que és el mateix, pantalles MÉS GRANS de 900px------------*/
 
 @media only screen and (min-width: 900px) {
-    /* body {
-            background-color: lime; */
-
 
     .caixes {
         display: grid;
@@ -398,7 +393,8 @@ h2 {
         padding: 15px;
         width: 55vw;
         text-align: justify;
-        margin-top:0px;padding-top: 0px;
+        margin-top: 0px;
+        padding-top: 0px;
     }
 
 }
