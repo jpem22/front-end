@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulari de contacte</title>
+    <link rel="stylesheet" href="contacte.css">
+</head>
+
+<body>
+
+    <!-- SECCIÓ HEADER -->
+    <header>
+        <a href="#">
+            <img src="assets/home.svg" alt="home icon">
+        </a>
+        <nav class="enllaços">
+            <a href="inici.html">Inici</a>
+            <a href="cv.html">CV</a>
+            <a href="contacte.html">Contacte</a>
+        </nav>
+    </header>
+    <section class="imatge_fons">
+        <h1 class="titol">Contacte</h1>
+    </section>
+
+    <!-- SECCIÓ FORMULARI -->
+    <section id="formulari">
+        <form action="" method="get" id="form1">
+            <label for="nom" class="nom">Nom</label>
+            <input type="text" name="nom" class="nom1" placeholder="Escriu el nom" />
+            <label for="email" class="email">Correu electrònic:</label>
+            <input type="email" name="email" class="email1" placeholder="Escriu el teu correu" />
+            <label for="comentaris" class="comentaris">Comentaris</label>
+            <textarea name="text" cols="50" rows="10" class="comentaris1"></textarea>
+            <label for="tractament" class="accepta">Accepta el tractament de les seves dades</label>
+            <div class="contactar">
+                <input type="checkbox" checked="checked" class="tractament" />
+                <input type="submit" value="Enviar" class="boto" />
+                <input type="reset" value="Restablir" />
+            </div>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="pie">
+        <a href="https://www.twitter.com"><img src="assets/icons8-facebook-nuevo.svg" class="twitter" height="50"></a>
+        <a href="https://www.linkedin.com"><img src="assets/icons8-linkedin.svg" class="linkedin" height="50"></a>
+        <a href="https://www.instagram.com"><img src="assets/icons8-twitter.svg" class="instagram" height="50"></a>
+    </footer>
+
+</body>
+
+</html>

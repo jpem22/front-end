@@ -1,5 +1,6 @@
+<!-- Cal tenir en compte que aquest document no té cap full d'estils CSS associat. Per tant, es veurà tal qual, només HTML interpretat per navegador, sense estils. -->
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <!-- Configuració del document -->
@@ -14,17 +15,14 @@
 
     <!-- Tot el codi HTML va dins del tag body -->
 
-    <header class="cabecera">
-        <!-- Capçalera de secció -->
+    <header>
         <a href="#">
-            <img src="https://picsum.photos/100/50" alt="Logo" class="menu_navç">
-            <!-- Imatge. La ruta del recurs src pot ser una URL d'un recurs extern o pot apuntar cap a un fitxer del propi servidor -->
+            <img src="assets/home.svg" alt="home icon">
         </a>
-        <nav>
-            <!-- Barra de navegació -->
-            <a href="inici.html" target="_blank">Inici</a>
-            <a href="cv.html" target="_blank">CV</a>
-            <a href="contacte.html">Contactar</a>
+        <nav class="enllaços">
+            <a href="inici.html">Inici</a>
+            <a href="cv.html">CV</a>
+            <a href="contacte.html">Contacte</a>
         </nav>
     </header>
 
@@ -82,6 +80,8 @@
 
     </section>
 
+
+
     <section>
         <h2 class="titol">Els meus projectes</h2><!-- Títol de secció -->
         <!-- Contenidor -->
@@ -135,13 +135,13 @@
         <h1 class="titol-experiencia">Experiencia</h1><!-- Títol de secció -->
         <div class="experiencia">
             <article>
-                <img src="assets\img\Ellipse 1.svg" alt="Descripció de la imatge" height="300">
+                <img src="assets\Ellipse 1.svg" alt="Descripció de la imatge" height="300">
             </article>
             <article>
-                <img src="assets\img\Ellipse 2.svg" alt="Descripció de la imatge" height="300">
+                <img src="assets\Ellipse 2.svg" alt="Descripció de la imatge" height="300">
             </article>
             <article>
-                <img src="assets\img\Ellipse 3.svg" alt="Descripció de la imatge" height="300">
+                <img src="assets\Ellipse 3.svg" alt="Descripció de la imatge" height="300">
             </article>
     </section>
     </div>
@@ -152,29 +152,39 @@
         <div class="caixes_aficions">
             <article class="caixa_afi">
                 <h3>Viatjar</h3>
-                <img src="assets/img/books.svg" height="50" alt="Descripció de la imatge">
+                <img src="assets/books.svg" height="50" alt="Descripció de la imatge">
             </article>
             <article class="caixa_afi">
                 <h3>Llegir</h3>
-                <img src="assets/img/camera-outline.svg" height="50" alt="Descripció de la imatge">
+                <img src="assets/camera-outline.svg" height="50" alt="Descripció de la imatge">
             </article>
             <article class="caixa_afi">
                 <h3>Fotografia</h3>
-                <img src="assets/img/code-outline.svg" height="50" alt="Descripció de la imatge">
+                <img src="assets/code-outline.svg" height="50" alt="Descripció de la imatge">
             </article>
             <article class="caixa_afi">
                 <h3>Dibuixar amb CSS</h3>
-                <img src="assets/img/books.svg" height="50" alt="Descripció de la imatge">
+                <img src="assets/books.svg" height="50" alt="Descripció de la imatge">
             </article>
             <article class="caixa_afi">
                 <h3>Maquetar una web</h3>
-                <img src="assets/img/contact.svg" height="50" alt="Descripció de la imatge">
+                <img src="assets/contact.svg" height="50" alt="Descripció de la imatge">
 
             </article>
             <article class="caixa_afi">
                 <h3>Anar en bici</h3>
-                <img src="assets/img/airplane-outline.svg" height="50" alt="Descripció de la imatge">
+                <img src="assets/airplane-outline.svg" height="50" alt="Descripció de la imatge">
             </article>
         </div>
+    </section>
+
+    <!-- SECCIÓ FOOTER-->
+    <footer class="pie">
+        <a href="https://www.twitter.com"><img src="assets/icons8-facebook-nuevo.svg" height="50"></a>
+        <a href="https://www.linkedin.com"><img src="assets/icons8-linkedin.svg" height="50"></a>
+        <a href="https://www.instagram.com"><img src="assets/icons8-twitter.svg" height="50"></a>
+    </footer>
+
 </body>
 
+</html>

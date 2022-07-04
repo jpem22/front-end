@@ -42,6 +42,19 @@ a {
     font-size: 1.5rem;
 }
 
+header {
+    display: flex;
+    background-color: #222;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+}
+
+.enllaços {
+    display: flex;
+    gap: 0.5rem;
+}
+
 .titol_principal {
     display: grid;
     /*otra opcion igual que la de flex pero con menos líneas, y utilizando modelo grid */
@@ -52,7 +65,7 @@ a {
     /*extiende la imagen dentro del contenedor en el que está*/
     background-repeat: no-repeat;
     background-position: center;
-    color: white;
+    color: black;
 }
 
 
@@ -92,9 +105,7 @@ h2 {
 
 }
 
-/* .caixa>p {
-    padding: 1rem;
-} */
+
 
 .caixa>button {
     margin: 1rem;
@@ -145,7 +156,14 @@ h2 {
     margin: 0 auto;
 }
 
-
+.pie {
+    background-color: black;
+    position: relative;
+    bottom: 0;
+    /*mantindrà el footer enganxat a la part inferior de la pantalla*/
+    width: 100%;
+    text-align: center;
+}
 
 
 /***************************************************************************/
@@ -158,7 +176,19 @@ h2 {
 
     /* body {
         /* background-color: rgb(127, 140, 255); */
-    .caixes {
+    
+        header {
+            display: grid;
+            background-color: #222;
+            text-align: center;
+            grid-template-columns: 1fr;
+        }
+    
+        nav.enllaços {
+            display: grid;
+        }
+
+        .caixes {
         display: grid;
         grid-template-columns: 1fr;
         /*define el numero de columnas de la cuadrícula. En este caso 1 columna*/
@@ -226,6 +256,14 @@ h2 {
         background-color: black;
         align-items: center;
     }
+
+    .pie {
+        display: grid;
+        height: auto;
+        background-color: black;
+        grid-template-rows: 3rem 3rem 3rem;
+        justify-items: center;
+    }
 }
 
 /*-------------  Amb mides d'entre 600px i 900px s'aplicarà els estils------------*/
@@ -263,23 +301,20 @@ h2 {
     }
 
 
-    .imatge_caixa,
-    .imatge_text {
-        width: 100%;
+    .imatge_caixa, .imatge_text {
+        width: 70%;
         box-sizing: border-box;
-        padding: 0.5rem
+        padding: 0.5rem;
+        /* align-content: center; */
+        margin: 0 auto;
     }
-
-    /* img.imatge_caixa {
-        width: 70vw;
-    } */
+   
 
     .experiencia {
         display: grid;
         padding: 5rem;
         background-color: black;
-        align-items: center;
-        /* flex-direction: column; */
+        align-items: center;        
         justify-items: center;
         align-content: space-around;
     }
@@ -314,6 +349,7 @@ h2 {
         /*define el numero de columnas de la cuadrícula. En este caso 1 columna*/
         gap: .5rem;
         justify-items: center;
+        margin-bottom: 2rem;
 
     }
 
@@ -332,35 +368,37 @@ h2 {
     .imatge_text {
         width: 30vw;
         box-sizing: border-box;
-      
+
     }
 
     .contingut.imatge_caixa,
     .imatge_text {
         width: 20vw;
         box-sizing: border-box;
-      
+
     }
 
-    article p{
+    article p {
         padding: .5rem;
         text-align: justify;
     }
 
     .contingut {
-     display: grid;    
-    /* align-items: stretch;
+        display: grid;
+        /* align-items: stretch;
     justify-content: center; */
-    grid-column: 1fr 2fr;
-    align-content: center;
-    justify-items: end;
-    grid-template-columns: 2fr 1fr;
+        grid-column: 1fr 2fr;
+        align-content: center;
+        justify-items: end;
+        grid-template-columns: 2fr 1fr;
 
     }
-   .contingut p {
-    padding: 15px;
+
+    .contingut p {
+        padding: 15px;
         width: 55vw;
         text-align: justify;
+        margin-top:0px;padding-top: 0px;
     }
 
 }

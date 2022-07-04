@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+}
+
+html {
+    font-size: 20px;
+}
+
+header {
+    display: flex;
+    background-color: #222;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+}
+
+.enllaços a {
+
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.imatge_fons {
+    background-image: url('https://picsum.photos/seed/picsum/200/300');
+    height: 15vh;
+    background-repeat: no-repeatç;
+    background-size: cover;
+    overflow: hidden;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input,
+label,
+textarea {
+    display: block;
+    width: 100%;
+}
+
+#form1 {
+    margin: 0 auto;
+    width: 50%;
+    padding: 3rem;
+    line-height: 1.5rem;
+}
+
+input[type=submit] {
+    padding-right: 1rem;
+}
+
+textarea#comentaris {
+    width: 100%;
+}
+
+.contactar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    /*separació elements checkbox, submit i reset*/
+}
+
+.pie {
+    background-color: black;
+    position: relative;
+    bottom: 0;
+    /*mantindrà el footer enganxat a la part inferior de la pantalla*/
+    width: 100%;
+    text-align: center;
+}
+
+
+/***************************************************************************/
+/*************************   MEDIA QUERIES   *******************************/
+/***************************************************************************/
+
+/* MÒBIL------------S'aplicarà per pantalles de COM A MÀXIM 600px, o el que és el mateix, pantalles MÉS PETITES de 600px -------*/
+
+@media only screen and (max-width: 600px) {
+
+    header {
+        display: grid;
+        background-color: #222;
+        text-align: center;
+        grid-template-columns: 1fr;
+    }
+
+    nav.enllaços {
+        display: grid;
+    }
+
+    #form1 {
+        margin: 0 auto;
+        width: 50%;
+        padding: 3rem;
+        line-height: 1.5rem;
+        height: auto;
+    }
+
+    .pie {
+        display: grid;
+        height: auto;
+        background-color: black;
+        grid-template-rows: 2.5rem 2.5rem 2.5rem;
+        justify-items: center;   
+     }
+
+    
+
+    textarea#comentaris,
+    input,
+    label {
+        width: 100%;
+    }
+
+    .contactar {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-direction: column;
+
+    }
+
+}
+
+/*-------------  Amb mides d'entre 600px i 900px s'aplicarà els estils------------*/
+
+@media screen and (min-width: 601px) and (max-width: 899px) {
+
+    #form1 {
+        display: grid;
+        grid-template-columns: 8rem 8rem;
+        grid-template-rows: 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem 1.5rem;
+        gap: 1.5rem;
+        grid-template-areas:
+            'nom nom1 '
+            'correu correu1'
+            'comentaris comentaris1'
+            '. comentaris1'
+            'accepta accepta'
+            'contactar contactar';
+    }
+
+    .nom {
+        grid-area: nom;
+    }
+
+    .nom1 {
+        grid-area: nom1;
+    }
+
+    .email {
+        grid-area: correu;
+    }
+
+    .email1 {
+        grid-area: correu1;
+    }
+
+    .comentaris {
+        grid-area: comentaris;
+    }
+
+    .comentaris1 {
+        grid-area: comentaris1;
+    }
+
+    .contactar {
+        grid-area: contactar;
+        ;
+    }
+
+    .accepta {
+        grid-area: accepta;
+    }
+
+    .pie {
+        background-color: black;
+        position: absolute;
+        bottom: 0;
+         mantindrà el footer enganxat a la part inferior de la pantalla 
+        width: 100%;
+        text-align: center;
+
+    }  
+
+    
+}
+
+/*----------S'aplicarà per pantalles de COM A MÍNIM 900px, o el que és el mateix, pantalles MÉS GRANS de 900px------------*/
+
+@media only screen and (min-width: 900px) {
+
+    .pie {
+        background-color: black;
+        position: absolute;
+        bottom: 0;
+        /*mantindrà el footer enganxat a la part inferior de la pantalla*/
+        width: 100%;
+        text-align: center;
+    }
+}
