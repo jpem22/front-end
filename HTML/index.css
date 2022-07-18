@@ -1,3 +1,9 @@
+/* 
+bona pràctica posar comentaris al codi, sobretot aquelles propietat menys comuns. 
+Bon ús de classes i especificitat.
+Ben plantejat l'ús d'un full css per cada pàgina
+Bona feina! */
+
 :root {
     /*representa el elemento html
     --main-color: #0044ff;
@@ -102,7 +108,6 @@ h2 {
     border-radius: 16px;
     overflow: hidden;
     /*para que no salga la imagen fuera del border radius al hacer un background-image*/
-
 }
 
 

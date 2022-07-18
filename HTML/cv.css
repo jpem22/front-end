@@ -20,9 +20,10 @@ header {
 }
 
 .imatge_fons {
-    background-image: url('https://picsum.photos/seed/picsum/200/300');
+    background-image: url('https://picsum.photos/seed/picsum/200/300'); 
+    /* es pot seleccionar la mida de la imatge per adaptarla millor, per exemple: https://picsum.photos/seed/picsum/1200/300 per obtenir una imatge més panoràmica */
     height: 30vh;
-    background-repeat: no-repeatç;
+    background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
     width: 100vw;
@@ -298,6 +299,10 @@ td {
         display: block;
     }
 
+    /*
+    A les media queries no cal repetit propietat que ja s'han declarat anteriorment. Només cal sobreescriure aquelles que canviaran segons la mida de la pantalla.
+    per exemple, està bé sobreescriure: grid-template-rows: 2.5rem 2.5rem 2.5rem;  però no caldria tornar a definir el background color, ja que sempre és black.
+    */
     .pie {
         display: grid;
         background-color: black;
